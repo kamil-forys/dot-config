@@ -1,0 +1,42 @@
+# .nanorc configuration file
+# Works properly with GNU nano 2.9.8
+#
+# Add this line to your crontab file:
+# 45 * * * * mkdir -p ~/.nano_backup; find ~/.nano_backup -ctime +7 -delete
+# It will manage your backup.
+#
+# Author: Kamil Forys
+# Last modification date: 22.04.2019
+
+set   quiet
+unset autoindent
+set   backup
+set   backupdir ~/.nano_backup
+# This stopped working in Ubuntu 19.04, nano 3.2
+# unset backwards
+unset boldtext
+unset casesensitive
+# This stopped working in Ubuntu 18.10, nano 2.9.8
+# set   const
+unset cut
+set   historylog
+set   locking
+set   morespace
+unset mouse
+set   multibuffer
+unset nohelp
+unset nonewlines
+set   nowrap
+# This stopped working in Ubuntu 18.10, nano 2.9.8
+# unset poslog
+set   regexp
+set   smarthome
+set   smooth
+set   softwrap
+set   suspend
+set   tabsize 2
+set   tabstospaces
+unset tempfile
+# This stopped working in Ubuntu 18.04, nano 2.9.3
+# set   undo
+unset view
