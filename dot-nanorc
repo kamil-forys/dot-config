@@ -1,14 +1,15 @@
 # .nanorc configuration file
-# Works properly with GNU nano 2.9.8
+# Works properly with GNU nano 4.3
 #
 # Add this line to your crontab file:
 # 45 * * * * mkdir -p ~/.nano_backup; find ~/.nano_backup -ctime +7 -delete
 # It will manage your backup.
 #
 # Author: Kamil Forys
-# Last modification date: 22.04.2019
+# Last modification date: 22.10.2019
 
-set   quiet
+# This stopped working in Ubuntu 19.10, nano 4.3
+#set   quiet
 unset autoindent
 set   backup
 set   backupdir ~/.nano_backup
@@ -18,7 +19,8 @@ unset boldtext
 unset casesensitive
 # This stopped working in Ubuntu 18.10, nano 2.9.8
 # set   const
-unset cut
+# This stopped working in Ubuntu 19.10, nano 4.3
+#unset cut
 set   historylog
 set   locking
 set   morespace
