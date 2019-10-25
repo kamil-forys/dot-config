@@ -17,8 +17,7 @@ set   backupdir ~/.nano_backup
 # unset backwards
 unset boldtext
 unset casesensitive
-# This stopped working in Ubuntu 18.10, nano 2.9.8
-# set   const
+set   constantshow
 # This stopped working in Ubuntu 19.10, nano 4.3
 #unset cut
 set   historylog
